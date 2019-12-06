@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "my-proxy",
+  "version": "1.0",
+  "description": "proxy",
+
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "proxy",
+    "storage"
+  ]
+}

@@ -1,0 +1,44 @@
+body {
+  width: 400px;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap > * {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#set, input {
+  width: 100%;
+}
+
+#loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a9a9a9b8;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #aaa;
+  border-top-color: black;
+  border-radius: 50%;
+  animation: spin linear 1s infinite;
+}
+
+@keyframes spin {
+  from  { transform: rotate(0deg); }
+  to    { transform: rotate(360deg); }
+}
